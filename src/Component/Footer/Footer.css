@@ -1,0 +1,127 @@
+footer {
+    background-color: #625a35; 
+    color: #fff; 
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #f4f1d0;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #c4bf85; 
+}
+
+.social-media a {
+    margin-right: 15px;
+    color: #f4f1d0;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #c4bf85;
+}
+
+.email-subscription input[type="email"] {
+    padding: 10px;
+    border: 1px solid #c4bf85;
+    background-color: #4e482d;
+    color: #f4f1d0;
+    width: 180px;
+    margin-right: 5px;
+}
+
+.email-subscription input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ddd8a3;
+    border: none;
+    cursor: pointer;
+    color: #4e482d;
+    transition: background-color 0.3s ease;
+}
+
+.email-subscription input[type="submit"]:hover {
+    background-color: #c4bf85;
+}
+
+.footer-bottom {
+  
+    background-color: #625a35;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.footer-bottom hr{
+   background-color: #c4bf85;
+    height: 5px;
+    width: 65%;
+    margin-left: 10%;
+    margin-top: -3px;
+}
+.footer-bottom .links{
+    margin-top: -10px;
+    display: flex;
+    margin-bottom: 10px;
+    width: 20%;
+    gap:20px;
+    
+}
+.footer-bottom a {
+   
+   
+    color: #f4f1d0;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #c4bf85;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .email-subscription input[type="email"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .email-subscription input[type="submit"] {
+        width: 100%;
+    }
+}
