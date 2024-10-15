@@ -1,5 +1,6 @@
 {
-  "homepage": "https://github.com/ShahZaib151214/clothingproject.github.io",
+"homepage": "https://ShahZaib151214.github.io/ClothingProject/",
+
   "name": "clothingproject",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
