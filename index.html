@@ -1,17 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Page Not Found</title>
   </head>
   <body>
-    <div id="root"></div>
     <script type="text/javascript">
-      var redirectTo = window.location.pathname.replace('/Clothing', '');
-      window.location.href = "/Clothing" + redirectTo;
+      (function() {
+        var currentPath = window.location.pathname;
+        var basePath = '/Clothing';
+
+        // If the path already starts with '/Clothing', do nothing
+        if (!currentPath.startsWith(basePath)) {
+          // If it's not already prefixed, redirect to the correct path
+          window.location.href = basePath + currentPath;
+        }
+      })();
     </script>
-    
   </body>
 </html>

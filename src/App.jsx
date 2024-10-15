@@ -1,5 +1,5 @@
  import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import HomePage from './Pages/HomePage/HomePage';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import Login from './Component/Login/Login';
@@ -14,9 +14,9 @@ const App = () => {
 
   return (
     <>
-     <BrowserRouter>
+     <HashRouter basename="/Clothing">
      <Appcontent/>
-     </BrowserRouter>
+     </HashRouter>
     </>
   );
 }
