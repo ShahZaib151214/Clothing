@@ -7,14 +7,16 @@
   </head>
   <body>
     <script type="text/javascript">
-      var currentPath = window.location.pathname;
-      
-      // Check if the current path is already inside the '/Clothing/' base
-      if (!currentPath.startsWith('/Clothing')) {
-        // If not, redirect to the same path under '/Clothing'
-        var redirectTo = currentPath.replace('/', '/Clothing/');
-        window.location.href = redirectTo;
-      }
+      (function() {
+        var currentPath = window.location.pathname;
+        var basePath = '/Clothing';
+
+        // If the path already starts with '/Clothing', do nothing
+        if (!currentPath.startsWith(basePath)) {
+          // If it's not already prefixed, redirect to the correct path
+          window.location.href = basePath + currentPath;
+        }
+      })();
     </script>
   </body>
 </html>
